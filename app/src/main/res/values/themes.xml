@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Debusa" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Debusa" parent="Base.Theme.Debusa" />
+
+    <style name="activityheadcolor" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/actifityheadcolor</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/actifityheadcolor</item>
+    </style>
+
+    <style name="SplashStyle" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/backapp</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/backapp</item>
+        <!--&lt;!&ndash;        <item name="windowSplashScreenBackground">@color/merah_tua</item>&ndash;&gt; ini kenapa gak bisa ya kak mala widowedBackground yang bisa-->
+        <item name="android:animationDuration">2000</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/backapp</item>
+    </style>
+</resources>

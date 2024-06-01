@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="backapp">#DEE3C9</color>
+    <color name="hijauindikator">#7D951D</color>
+    <color name="actifityheadcolor">#B8DAB0</color>
+</resources>

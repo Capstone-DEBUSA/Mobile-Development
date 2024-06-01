@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Debusa</string>
+    <string name="slide1">DetektifBuahSayur dibuat dengan tujuan untuk memberikan edukasi yang menyenangkan kepada anak-anak di Indonesia yang sedang duduk di bangku sekolah dasar untuk mengetahui penjelasan atau literasi digital mengenai sayur dan buah di Indonesia</string>
+    <string name="slide2">DetektifBuahSayur berfokus pada fitur kamera
+atau dari galeri, yang dapat digunakan pengguna untuk mengambil gambar, kemudian gambar tersebut akan di prediksi dan kemudian dari hasil prediksi tersebut  akan menampilkan penjelasan mengenai objek tersebut apakah itu sayur atau buah, sehingga pengguna dapat membaca mengenai objek yang diprediksinya</string>
+    <string name="slide3">Sangat penting bagi anak untuk mengetahui penjelasan mengenai sayur dan buah agar mereka tertarik untuk mengkonsumsi sayur dan buah, karena memberikan banyak manfaat bagi kesehatan</string>
+
+</resources>
