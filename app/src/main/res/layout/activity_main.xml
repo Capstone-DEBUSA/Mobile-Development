@@ -5,15 +5,88 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgournmainact"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/imageprev"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/placeholder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/predictbut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/actifityheadcolor"
+        android:text="Analyze"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/camerabut"
+        app:layout_constraintStart_toStartOf="@+id/gallerybut" />
+
+    <Button
+        android:id="@+id/gallerybut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/actifityheadcolor"
+        app:layout_constraintBottom_toTopOf="@+id/predictbut"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/icongallery"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/addimage"
+        app:layout_constraintBottom_toBottomOf="@+id/gallerybut"
+        app:layout_constraintEnd_toEndOf="@id/gallerybut"
+        app:layout_constraintStart_toStartOf="@id/gallerybut"
+        app:layout_constraintTop_toTopOf="@+id/gallerybut" />
+
+
+
+
+    <Button
+        android:id="@+id/camerabut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/actifityheadcolor"
+        app:layout_constraintBottom_toTopOf="@+id/predictbut"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/iconcamera"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/cameraicon"
+        app:layout_constraintTop_toTopOf="@id/camerabut"
+        app:layout_constraintBottom_toBottomOf="@id/camerabut"
+        app:layout_constraintStart_toStartOf="@id/camerabut"
+        app:layout_constraintEnd_toEndOf="@id/camerabut"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
