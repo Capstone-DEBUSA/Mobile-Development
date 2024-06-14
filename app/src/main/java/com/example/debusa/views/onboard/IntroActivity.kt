@@ -1,12 +1,10 @@
-package com.example.debusa
+package com.example.debusa.views.onboard
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.debusa.databinding.ActivityIntroBinding
+import com.example.debusa.views.home.MainActivity
 
 class IntroActivity : AppCompatActivity() {
     private lateinit var binding: ActivityIntroBinding

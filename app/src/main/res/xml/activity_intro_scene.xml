@@ -38,7 +38,8 @@
             motion:layout_constraintTop_toTopOf="parent"
             android:id="@+id/imageView"
             motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintStart_toStartOf="parent" />
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent" />
         <Constraint
             android:layout_height="30dp"
             motion:layout_constraintHorizontal_bias="0.5"
@@ -47,8 +48,8 @@
             motion:layout_constraintStart_toStartOf="parent"
             android:id="@+id/menu1"
             motion:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="16dp"
-            android:layout_marginStart="32dp" >
+            android:layout_marginBottom="64dp"
+            android:layout_marginStart="64dp" >
             <CustomAttribute
                 motion:attributeName="crossfade"
                 motion:customFloatValue="1" />
@@ -63,20 +64,21 @@
             motion:layout_constraintVertical_bias="0.0"
             motion:layout_constraintStart_toEndOf="@+id/menu2"
             android:id="@+id/menu3"
-            android:layout_marginEnd="32dp" >
+            android:layout_marginEnd="64dp" >
             <CustomAttribute
                 motion:attributeName="crossfade"
                 motion:customFloatValue="0" />
         </Constraint>
         <Constraint
-            motion:layout_constraintEnd_toEndOf="@+id/imageView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            motion:layout_constraintTop_toBottomOf="@+id/imageView"
-            motion:layout_constraintStart_toStartOf="@+id/imageView"
             android:id="@+id/deskripsi"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="16dp"
-            android:layout_marginStart="16dp" />
+            android:layout_marginStart="16dp"
+            motion:layout_constraintBottom_toTopOf="@+id/menu1"
+            android:layout_marginBottom="64dp" />
         <Constraint
             android:id="@+id/menu2"
             motion:layout_constraintEnd_toStartOf="@+id/menu3"
@@ -116,15 +118,16 @@
             android:layout_width="0dp"
             motion:layout_constraintStart_toStartOf="parent"
             android:id="@+id/imageView2"
-            motion:layout_constraintEnd_toEndOf="parent" />
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent" />
         <Constraint
-            motion:layout_constraintEnd_toEndOf="@+id/imageView2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            motion:layout_constraintTop_toBottomOf="@+id/imageView2"
-            motion:layout_constraintStart_toStartOf="@+id/imageView2"
             android:id="@+id/deskripsi2"
-            android:layout_marginTop="8dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toStartOf="@+id/deskripsi3"
+            motion:layout_constraintBottom_toTopOf="@+id/menu1"
+            android:layout_marginBottom="64dp"
             android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp" />
         <Constraint
@@ -133,8 +136,8 @@
             android:layout_height="30dp"
             android:layout_width="30dp"
             motion:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="16dp"
-            android:layout_marginStart="32dp"
+            android:layout_marginBottom="64dp"
+            android:layout_marginStart="64dp"
             motion:layout_constraintHorizontal_bias="0.5"
             motion:layout_constraintStart_toStartOf="parent"
             motion:crossfade="0" >
@@ -164,7 +167,7 @@
             android:layout_width="30dp"
             motion:layout_constraintBottom_toBottomOf="@+id/menu2"
             motion:layout_constraintVertical_bias="0.0"
-            android:layout_marginEnd="32dp"
+            android:layout_marginEnd="64dp"
             motion:layout_constraintTop_toTopOf="@+id/menu2"
             motion:layout_constraintHorizontal_bias="0.5">
             <CustomAttribute
@@ -194,17 +197,18 @@
             android:layout_width="0dp"
             motion:layout_constraintStart_toStartOf="parent"
             android:id="@+id/imageView3"
-            motion:layout_constraintEnd_toStartOf="@+id/imageView" />
+            motion:layout_constraintEnd_toStartOf="@+id/imageView"
+            motion:layout_constraintBottom_toBottomOf="parent" />
         <Constraint
-            motion:layout_constraintEnd_toEndOf="@+id/imageView3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            motion:layout_constraintTop_toBottomOf="@+id/imageView3"
-            motion:layout_constraintStart_toStartOf="@+id/imageView3"
             android:id="@+id/deskripsi3"
-            android:layout_marginTop="8dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toTopOf="@+id/button"
+            motion:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="16dp"
-            android:layout_marginStart="16dp" />
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp" />
         <Constraint
             android:id="@+id/menu3"
             motion:layout_constraintEnd_toEndOf="parent"
@@ -213,7 +217,7 @@
             android:layout_width="30dp"
             motion:layout_constraintBottom_toBottomOf="@+id/menu2"
             motion:layout_constraintVertical_bias="0.0"
-            android:layout_marginEnd="32dp"
+            android:layout_marginEnd="64dp"
             motion:layout_constraintTop_toTopOf="@+id/menu2"
             motion:layout_constraintHorizontal_bias="0.5">
             <CustomAttribute
@@ -241,8 +245,8 @@
             android:layout_height="30dp"
             android:layout_width="30dp"
             motion:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="16dp"
-            android:layout_marginStart="32dp"
+            android:layout_marginBottom="64dp"
+            android:layout_marginStart="64dp"
             motion:layout_constraintHorizontal_bias="0.5"
             motion:layout_constraintStart_toStartOf="parent"
             motion:crossfade="0">

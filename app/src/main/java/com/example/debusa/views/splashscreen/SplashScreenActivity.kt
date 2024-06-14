@@ -1,12 +1,10 @@
-package com.example.debusa
+package com.example.debusa.views.splashscreen
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.debusa.views.onboard.IntroActivity
 import com.example.debusa.databinding.ActivitySplashScreenBinding
 
 class SplashScreenActivity : AppCompatActivity() {

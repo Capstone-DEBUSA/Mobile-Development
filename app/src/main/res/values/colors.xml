@@ -2,7 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="backapp">#DEE3C9</color>
+    <color name="backapp">#0A6847</color>
     <color name="hijauindikator">#7D951D</color>
-    <color name="actifityheadcolor">#B8DAB0</color>
+    <color name="actifityheadcolor">#F6E9B2</color>
+    <color name="headmain">#F5F5F5</color>
+    <color name="hijauresultact">#81B874</color>
+    <color name="trans">#66FFFFFF</color>
 </resources>

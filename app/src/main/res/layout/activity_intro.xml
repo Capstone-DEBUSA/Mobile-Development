@@ -5,9 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/actifityheadcolor"
+    android:background="#F3CA52"
     app:layoutDescription="@xml/activity_intro_scene"
-    tools:context=".IntroActivity">
+    tools:context=".views.onboard.IntroActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -18,7 +18,7 @@
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3"
-        android:src="@drawable/slide1" />
+        android:src="@drawable/slidee1" />
 
     <TextView
         android:id="@+id/deskripsi"
@@ -39,34 +39,32 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
-        android:src="@drawable/slide2"
+        android:src="@drawable/slidee2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3" />
 
 
-    
     <TextView
         android:id="@+id/deskripsi2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/slide2"
         android:gravity="center_horizontal"
+        android:text="@string/slide2"
         android:textAlignment="center"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        />
+        tools:layout_editor_absoluteY="555dp" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
-        android:src="@drawable/slide3"
+        android:src="@drawable/slidee3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"

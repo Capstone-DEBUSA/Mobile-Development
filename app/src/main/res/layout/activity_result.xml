@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.result.ResultActivity">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/resultactback">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/menuActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/backapp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:navigationIcon="@drawable/back"
+                    app:title="Hasil Prediksi"
+                    app:titleTextColor="#F6E9B2" />
+
+                <ImageView
+                    android:id="@+id/result_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="32dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/menuActivity"
+                    app:srcCompat="@drawable/placeholderresult" />
+
+                <TextView
+                    android:id="@+id/result_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:text="@string/result"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/btn_save"
+                    app:layout_constraintStart_toStartOf="@+id/search"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+<!--                <Button-->
+<!--                    android:id="@+id/search"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="16dp"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    android:layout_marginEnd="8dp"-->
+<!--                    android:backgroundTint="@color/hijauresultact"-->
+<!--                    android:textSize="20sp"-->
+<!--                    app:layout_constraintEnd_toStartOf="@+id/guideline"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/result_image" />-->
+
+                <ImageView
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/wiki"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/result_image" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_background"
+                    android:text="Wikipedia"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="@+id/search"
+                    app:layout_constraintStart_toStartOf="@+id/search"
+                    app:layout_constraintTop_toBottomOf="@+id/search" />
+
+
+                <ImageView
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/save"
+                    app:layout_constraintBottom_toBottomOf="@+id/search"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/guideline"
+                    app:layout_constraintTop_toTopOf="@+id/search" />
+
+                <TextView
+                    android:id="@+id/textsimpan"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_background"
+                    android:text="Simpan"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView"
+
+                    app:layout_constraintEnd_toEndOf="@+id/btn_save"
+                    app:layout_constraintStart_toStartOf="@+id/btn_save"
+                    app:layout_constraintTop_toTopOf="@+id/textView" />
+
+                                <TextView
+                                    android:id="@+id/deskripsi"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginEnd="16dp"
+                                    android:textColor="#141E46"
+                                    android:textAlignment="center"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/result_text"
+                                    tools:text="ssssssssssssssssssssssssssss" />
+
+                                <TextView
+                                    android:id="@+id/manfaat"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginEnd="16dp"
+                                    android:textColor="#141E46"
+                                    android:textAlignment="center"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/deskripsi"
+                                    tools:text="ssssssssssssssss" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/guideline"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintGuide_percent="0.50121653" />
+                                ->
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                    </ScrollView>
+
+
+
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>

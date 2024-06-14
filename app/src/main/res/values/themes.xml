@@ -7,10 +7,23 @@
 
     <style name="Theme.Debusa" parent="Base.Theme.Debusa" />
 
+
+    <style name="activityresult" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/backapp</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/hijauresultact</item>
+    </style>
+
     <style name="activityheadcolor" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/actifityheadcolor</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="android:windowBackground">@color/actifityheadcolor</item>
+    </style>
+
+    <style name="activityhome" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/backapp</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/black</item>
     </style>
 
     <style name="SplashStyle" parent="Theme.Material3.DayNight.NoActionBar">

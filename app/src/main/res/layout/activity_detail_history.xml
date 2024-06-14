@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C1E8C0"
+    tools:context=".views.detailhistory.DetailHistoryActivity">
+
+    <ImageView
+        android:id="@+id/imageDetail"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:transitionName="hisImage"
+        android:scaleType="fitXY"
+        android:src="@drawable/placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:transitionName="hisName"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageDetail"
+        tools:text="Ipomopsis aggregata" />
+
+    <TextView
+        android:id="@+id/deskripsi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:transitionName="hisDeskripsi"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        tools:text="sadasdsdsadaaaaaaadddddddddddddddd
+ddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddd" />
+
+
+    <TextView
+        android:id="@+id/mandaat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:transitionName="hisDeskripsi"
+        app:layout_constraintEnd_toEndOf="@+id/deskripsi"
+        app:layout_constraintStart_toStartOf="@+id/deskripsi"
+        app:layout_constraintTop_toBottomOf="@+id/deskripsi"
+        android:textSize="15sp"
+        tools:text="sadasdsdsadaaaaaaadddddddddddddddd
+ddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddd" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
