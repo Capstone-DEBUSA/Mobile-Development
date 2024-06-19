@@ -153,6 +153,110 @@
                                     app:layout_constraintTop_toBottomOf="@id/deskripsi"
                                     tools:text="ssssssssssssssss" />
 
+                <TextView
+                    android:id="@+id/quiz"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="QUIZ:"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/manfaat" />
+
+
+                <TextView
+                    android:id="@+id/pertanyaan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/quiz"
+                    tools:text="Pertanyaan nya adalah ?" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/pertanyaan">
+
+                    <!--                    <RadioButton-->
+                    <!--                        android:id="@+id/pilihan1"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        tools:text="Pilihan 1"-->
+                    <!--                        android:layout_marginStart="8dp"-->
+                    <!--                        android:checked="false" />-->
+
+                    <!--                    <RadioButton-->
+                    <!--                        android:id="@+id/pilihan2"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        tools:text="Pilihan 2"-->
+                    <!--                        android:layout_marginStart="8dp"-->
+                    <!--                        android:checked="false" />-->
+
+                    <!--                    <RadioButton-->
+                    <!--                        android:id="@+id/pilihan3"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        tools:text="Pilihan 3"-->
+                    <!--                        android:layout_marginStart="8dp"-->
+                    <!--                        android:checked="false" />-->
+
+
+                    <!--                    <RadioButton-->
+                    <!--                        android:id="@+id/pilihan4"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        tools:text="Pilihan 4"-->
+                    <!--                        android:layout_marginStart="8dp"-->
+                    <!--                        android:checked="false" />-->
+
+                    <!-- Tambahkan RadioButton lainnya sesuai dengan kebutuhan -->
+
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Submit Your Answer"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/radioGroup" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:backgroundTint="@color/hijauindikator"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:visibility="visible" />
+
+
                                 <androidx.constraintlayout.widget.Guideline
                                     android:id="@+id/guideline"
                                     android:layout_width="wrap_content"

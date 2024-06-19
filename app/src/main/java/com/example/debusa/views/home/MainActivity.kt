@@ -22,6 +22,7 @@ import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.request.RequestOptions
 import com.example.debusa.R
 import com.example.debusa.data.remote.response.PredictResponse
+import com.example.debusa.data.remote.response.Quiz
 import com.example.debusa.data.remote.retrofit.ApiConfig
 import com.example.debusa.databinding.ActivityMainBinding
 import com.example.debusa.utils.getImageUri
@@ -165,7 +166,9 @@ class MainActivity : AppCompatActivity() {
                              successResponse.data?.result,
                              successResponse.data?.description,
                              successResponse.data?.benefit,
-                             successResponse.data?.url
+                             successResponse.data?.url,
+                             successResponse.data?.quiz?.question,
+                             successResponse.data?.quiz?.options
                              )
 //                        binding.test.text = successResponse.data?.hasil ?: "error"
                     }else{
@@ -209,13 +212,16 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    private fun moveToResult(hasil: String?,desc: String?, manfaat: String?, url: String?) {
+    private fun moveToResult(hasil: String?,desc: String?, manfaat: String?, url: String?, quest:String?, option:List<String?>?) {
         val intent = Intent(this, ResultActivity::class.java)
         intent.putExtra(ResultActivity.EXTRA_IMAGE_URI, currentImageUri.toString())
         intent.putExtra("HASIL",hasil)
         intent.putExtra("DESC", desc)
         intent.putExtra("MANFAAT", manfaat)
         intent.putExtra("URL", url)
+        intent.putExtra("PERTANYAAN", quest)
+
+        intent.putStringArrayListExtra("OPTIONS", ArrayList(option))
         startActivity(intent)
     }
 

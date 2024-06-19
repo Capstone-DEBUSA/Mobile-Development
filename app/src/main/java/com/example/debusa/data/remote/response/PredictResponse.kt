@@ -14,10 +14,21 @@ data class PredictResponse(
 	val status: String? = null
 )
 
+data class Quiz(
+	@field:SerializedName("question")
+	val question: String? = null,
+
+	@field:SerializedName("options")
+	val options: List<String?>? = null
+)
+
 data class Data(
 
 	@field:SerializedName("result")
 	val result: String? = null,
+
+	@field:SerializedName("quiz")
+	val quiz: Quiz? = null,
 
 	@field:SerializedName("createdAt")
 	val createdAt: String? = null,
