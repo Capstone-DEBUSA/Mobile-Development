@@ -12,7 +12,7 @@
 
 
 # Tech stack & Open-source libraries
-   - Minimum SDK level 21
+   - Minimum SDK level 24
    - 100% Kotlin
    - MVVM Architecture
    - Retrofit2 and Okhttp - Construct the RESR APIs.
