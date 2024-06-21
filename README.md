@@ -1,4 +1,7 @@
-# Mobile-Development
+# Debusa App
+   Debusa is here to help solve the problem of children's lack of knowledge about fruits and vegetables.
+   ![Uploading image.png…]()
+
 
 # Tech stack & Open-source libraries
    - Minimum SDK level 21
@@ -17,7 +20,6 @@
        - Download the zip file
        - Run the project in Android Sudio
        - you can install APK in here: https://drive.google.com/drive/folders/18cIAinUntptxbTILp1_wKLJbnjRAgO3W
-
 
 # Features
   - Taking pictures with the camera
