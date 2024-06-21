@@ -19,7 +19,7 @@
        - you can install APK in here: https://drive.google.com/drive/folders/18cIAinUntptxbTILp1_wKLJbnjRAgO3W
 
 
-#Features
+# Features
   - Taking pictures with the camera
   - Take a picture from the gallery
   - Detect fruits and vegetables and display their descriptions
