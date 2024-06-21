@@ -1,6 +1,8 @@
 # Debusa App
    Debusa is here to help solve the problem of children's lack of knowledge about fruits and vegetables.
-   ![Uploading image.png…]()
+
+   ![image](https://github.com/Capstone-DEBUSA/Mobile-Development/assets/141242031/4285c3b7-94a7-4560-9b74-d186aae9c551)
+
 
 
 # Tech stack & Open-source libraries
