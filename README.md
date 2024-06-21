@@ -12,3 +12,9 @@
   
   ![image](https://github.com/Capstone-DEBUSA/Mobile-Development/assets/141242031/c515dbed-5c5e-47b3-86e6-8bfd0f668299)
 
+  # Getting Started
+  - Installation:
+       - Download the zip file
+       - Run the project in Android Sudio
+       - you can install APK in here: https://drive.google.com/drive/folders/18cIAinUntptxbTILp1_wKLJbnjRAgO3W
+
