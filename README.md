@@ -9,4 +9,5 @@
 
 # App Architexture
   Debusa App built using MVVM Architecture
-  
+  ![image](https://github.com/Capstone-DEBUSA/Mobile-Development/assets/141242031/c515dbed-5c5e-47b3-86e6-8bfd0f668299)
+
